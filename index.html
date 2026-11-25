@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pranav Dinesh Pyati</title>
+<meta name="description" content="Pranav Dinesh Pyati — Executive Director, Inera SOI (School of Intelligence). Corporate trainer, placement expert, LinkedIn and social media expert.">
+<meta property="og:title" content="Pranav Dinesh Pyati — Executive Director, Inera SOI">
+<meta property="og:description" content="Turning learners into professionals — and markets into growth.">
+<meta property="og:image" content="pranav-avatar.jpg">
+<meta name="theme-color" content="#0a1622">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: confident, warm, professional — a leader who teaches.
+   IDEA: the printed leadership profile come to life — a cover that breathes, a ledger that counts itself.
+   PICTURE: the cut-out portrait on a live neural-network field, large "SOI" outline behind.
+   COLOUR and TYPE: midnight navy fields, glacier-cyan support, one red accent (the pocket square); Lora + Inter.
+   LAYOUT: cover hero, ledger band, then chapters as full-width bands, gallery and connect to close. */
+:root{color-scheme:dark;--bg:#0a1622;--bg2:#0f2030;--card:#132739;--line:#22394d;--ink:#eef3f7;--mute:#9db0c0;--cy:#7cc8dc;--cy2:#3f97b0;--red:#e2474f}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--cy)}
+h1,h2,h3{font-family:Lora,Georgia,serif;font-weight:500;line-height:1.08;margin:0;text-wrap:balance}
+h2{font-size:clamp(32px,4.4vw,50px)}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(56px,8vw,112px) max(5vw,18px);position:relative}
+.alt{background:var(--bg2)}
+.kicker{color:var(--cy);font-size:14px;font-weight:600;margin-bottom:14px;display:flex;gap:10px;align-items:center}
+.kicker::before{content:"";width:28px;height:1px;background:var(--cy)}
+.lede{color:var(--mute);font-size:17px;max-width:62ch;margin-top:16px}
+em.it{font-family:Lora,serif;font-style:italic;color:var(--cy)}
+/* progress + nav */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--cy2),var(--cy));z-index:60}
+nav{position:sticky;top:0;z-index:50;background:rgba(10,22,34,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;padding:10px max(5vw,18px)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:600;flex:none}
+.brand img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:1px solid var(--cy2)}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.links::-webkit-scrollbar{display:none}
+.links a{flex:none;color:var(--mute);text-decoration:none;font-size:14px;padding:10px 12px;border-radius:8px;transition:.2s}
+.links a:hover,.links a.on{color:var(--ink);background:var(--card)}
+/* hero */
+.hero{min-height:min(calc(100vh - 56px),960px);display:grid;align-items:end;overflow:hidden;padding-bottom:0;background:radial-gradient(1000px 600px at 75% 30%,#173651 0,transparent 70%),var(--bg)}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.soi{position:absolute;right:2vw;top:6%;font:500 clamp(120px,22vw,300px)/1 Lora,serif;color:transparent;-webkit-text-stroke:1px rgba(124,200,220,.16);pointer-events:none;user-select:none}
+.hgrid{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px;align-items:end;width:100%}
+.htext{padding-bottom:clamp(40px,7vw,96px)}
+.hello{color:var(--mute);font-size:14px;letter-spacing:.02em;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.dot{width:9px;height:9px;border-radius:50%;background:#3ddc97;box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.hero h1{font-size:clamp(52px,8.5vw,108px);line-height:.98}
+.hero h1 span{display:block;font-style:italic;color:var(--cy);font-size:.62em;margin-top:8px}
+.role{margin:26px 0 8px;font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--ink)}
+.typed{font-size:clamp(18px,2.2vw,24px);font-family:Lora,serif;color:var(--mute);min-height:1.6em}
+.typed b{color:var(--ink);font-weight:500;border-right:2px solid var(--cy);padding-right:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{border-color:transparent}}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--cy2);color:var(--ink);background:transparent;cursor:pointer;font-family:inherit;transition:.25s}
+.btn.pri{background:var(--cy);color:#06202b;border-color:var(--cy)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(124,200,220,.6)}
+.btn:focus-visible,.links a:focus-visible,button:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.portrait{position:relative;align-self:end;justify-self:center;width:min(100%,520px);transform-style:preserve-3d;transition:transform .2s ease-out}
+.portrait img{width:auto;max-width:100%;max-height:calc(100vh - 110px);margin:0 auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.55))}
+.portrait::before{content:"";position:absolute;inset:18% 8% 0;border-radius:50% 50% 0 0;background:radial-gradient(circle at 50% 30%,rgba(124,200,220,.28),transparent 65%)}
+.badge{position:absolute;background:rgba(19,39,57,.9);border:1px solid var(--line);backdrop-filter:blur(8px);border-radius:14px;padding:10px 14px;font-size:13px;color:var(--mute);animation:float 6s ease-in-out infinite}
+.badge b{display:block;color:var(--ink);font-size:18px;font-family:Lora,serif;font-weight:600}
+.b1{left:-4%;top:34%}.b2{right:-2%;top:56%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-12px)}}
+/* ledger */
+.ledger{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:28px 18px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.num{font:500 clamp(36px,4.6vw,58px)/1 Lora,serif;color:var(--ink);white-space:nowrap}
+.num small{color:var(--cy);font-size:.55em}
+.stat p{margin:10px 0 0;color:var(--mute);font-size:14px}
+/* two col */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);margin-top:40px}
+.two p{color:#cfdbe4;font-size:17px}
+.quote{font:italic 500 clamp(22px,2.6vw,30px)/1.35 Lora,serif;border-left:2px solid var(--red);padding-left:22px;margin:44px 0 0;max-width:42ch}
+.quote small{display:block;font:600 13px Inter,sans-serif;color:var(--mute);margin-top:12px;font-style:normal}
+/* mandate */
+.mand{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;margin-top:44px}
+.edcard{background:linear-gradient(160deg,#16334a,#0f2232);border:1px solid var(--line);border-radius:20px;padding:32px}
+.edcard h3{font-size:30px;margin:6px 0 20px}
+.edcard li{padding:12px 0;border-top:1px solid var(--line);color:#cfdbe4;font-size:15px}
+.edcard li b{color:var(--ink)}
+.edcard ul{list-style:none;margin:0;padding:0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tab{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mute);font:500 14px Inter,sans-serif;cursor:pointer;transition:.2s}
+.tab[aria-selected=true]{background:var(--cy);color:#06202b;border-color:var(--cy)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px;min-height:230px;position:relative;overflow:hidden}
+.panel .roman{font:italic 500 92px/1 Lora,serif;color:rgba(124,200,220,.12);position:absolute;right:22px;top:6px}
+.panel h3{font-size:30px;margin-bottom:14px}
+.panel p{color:#cfdbe4;font-size:17px;max-width:48ch}
+.panel.swap{animation:swap .45s ease}
+@keyframes swap{from{opacity:0;transform:translateY(12px)}}
+/* timeline */
+.tl{margin-top:48px;position:relative}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl .fill{position:absolute;left:11px;top:6px;width:1px;background:var(--cy);height:0;transition:height .2s linear}
+.job{position:relative;padding:0 0 44px 48px}
+.job::before{content:"";position:absolute;left:4px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--cy)}
+.jobin{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:.3s}
+.jobin:hover{border-color:var(--cy2);transform:translateX(6px)}
+.job h3{font-size:28px}
+.tag{font-size:13px;color:var(--cy);margin-top:6px;font-weight:500}
+.job p{color:#cfdbe4;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+.meter{margin-top:18px}
+.meter .lab{display:flex;justify-content:space-between;font-size:14px;color:var(--mute);margin-bottom:6px}
+.meter .lab b{color:var(--ink);font-family:Lora,serif;font-size:22px;font-weight:600}
+.bar{height:8px;border-radius:8px;background:#0b1a27;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--cy2),var(--cy));transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.bar i.over{background:linear-gradient(90deg,var(--cy2),var(--cy) 80%,var(--red))}
+.sectors{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.sectors span{padding:10px 18px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-family:Lora,serif;font-size:18px}
+/* trainer */
+.flip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:44px}
+.fc{perspective:900px;height:220px;cursor:pointer;background:none;border:0;padding:0;color:inherit;font:inherit;text-align:left}
+.fcin{position:relative;width:100%;height:100%;transition:transform .7s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}
+.fc:hover .fcin,.fc.on .fcin{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;padding:24px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.front{background:var(--card)}
+.front b{font:500 64px/1 Lora,serif;color:var(--cy)}
+.front span{font-weight:600}
+.back{background:linear-gradient(160deg,#1c4a60,#12303f);transform:rotateY(180deg);justify-content:center}
+.back p{margin:8px 0 0;color:#dbe7ee;font-size:15px}
+.hint{font-size:13px;color:var(--mute);margin-top:12px}
+.path{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:56px;position:relative}
+.step{padding:0 18px 0 0;position:relative}
+.step .n{width:48px;height:48px;border-radius:50%;border:1px solid var(--cy2);display:grid;place-items:center;font-family:Lora,serif;font-size:20px;background:var(--bg2);position:relative;z-index:1;transition:.4s}
+.step.lit .n{background:var(--cy);color:#06202b;border-color:var(--cy)}
+.step::after{content:"";position:absolute;left:48px;right:0;top:24px;height:1px;background:var(--line)}
+.step:last-child::after{display:none}
+.step h3{margin:18px 0 6px;font-size:22px}
+.step p{color:var(--mute);font-size:15px;margin:0}
+.prog{display:grid;gap:12px;margin-top:56px}
+.pr{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:20px;align-items:center;padding:20px 24px;border:1px solid var(--line);border-radius:16px;background:var(--card);transition:.3s}
+.pr:hover{border-color:var(--cy2)}
+.pr b{font:500 24px Lora,serif;color:var(--cy)}
+.pr h3{font-size:20px;font-family:Inter,sans-serif;font-weight:600}
+.pr p{margin:4px 0 0;color:var(--mute);font-size:15px}
+.pr small{font-size:13px;color:var(--mute);text-align:right}
+/* expertise */
+.engines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.eng{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.35s}
+.eng.dim{opacity:.35}
+.eng.hi{border-color:var(--cy);box-shadow:0 20px 50px -25px rgba(124,200,220,.5)}
+.eng h3{font-size:30px}
+.eng .sub{font-size:13px;color:var(--cy);font-weight:600;margin:4px 0 18px}
+.eng ul{list-style:none;margin:0;padding:0}
+.eng li{padding:11px 0;border-top:1px solid var(--line);font-size:15px;color:#cfdbe4;display:flex;gap:10px}
+.eng li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--cy);margin-top:9px}
+.strengths{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:28px}
+.sg{padding:18px;border-radius:14px;border:1px solid var(--line);background:rgba(19,39,57,.5)}
+.sg b{display:block;font-size:15px}
+.sg p{font-size:13px;color:var(--mute);margin:6px 0 10px}
+.sg span{font-size:12px;font-weight:600;color:#06202b;background:var(--cy);padding:3px 10px;border-radius:999px}
+.marq{overflow:hidden;border-block:1px solid var(--line);margin-top:56px;padding:18px 0;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marq div{display:flex;gap:42px;width:max-content;animation:mq 40s linear infinite;font:italic 500 22px Lora,serif;color:var(--mute)}
+.marq div span::after{content:"·";margin-left:42px;color:var(--red)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:230px;gap:14px;margin-top:44px}
+.ph{position:relative;overflow:hidden;border-radius:18px;cursor:zoom-in;border:1px solid var(--line);background:var(--card);padding:0}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1),filter .6s;filter:saturate(.9)}
+.ph:hover img{transform:scale(1.07);filter:saturate(1.08)}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(6,16,24,.92));font-size:14px;text-align:left;color:var(--ink);transform:translateY(8px);opacity:.92;transition:.4s}
+.ph:hover figcaption{transform:none;opacity:1}
+.ph.tall{grid-row:span 2}
+.ph.wide{grid-column:span 2;grid-row:span 2}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(4,10,16,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.open{display:flex;animation:swap .3s}
+.lb img{max-height:82vh;max-width:min(92vw,1100px);border-radius:12px;object-fit:contain}
+.lb p{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:var(--mute);font-size:15px;padding:0 70px}
+.lbb{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:22px;cursor:pointer;display:grid;place-items:center}
+.lbb.x{top:18px;right:18px}.lbb.l{left:18px;top:50%}.lbb.r{right:18px;top:50%}
+/* certs */
+.cfil{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:20px}
+.cert{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.35s;position:relative;overflow:hidden}
+.cert::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(124,200,220,.14) 50%,transparent 60%);transform:translateX(-100%);transition:transform .9s}
+.cert:hover::after{transform:translateX(100%)}
+.cert:hover{border-color:var(--cy2);transform:translateY(-4px)}
+.cert.hide{display:none}
+.cert small{font-size:12px;font-weight:600;color:var(--cy);letter-spacing:.06em}
+.cert h3{font-size:20px;margin:10px 0 6px}
+.cert p{margin:0;color:var(--mute);font-size:14px}
+.offers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:56px}
+.off{border-top:2px solid var(--cy);padding-top:18px}
+.off h3{font-size:22px;margin-bottom:8px}
+.off p{color:var(--mute);font-size:15px;margin:0}
+/* connect */
+.connect{background:radial-gradient(800px 400px at 20% 0,#173651,transparent 70%),var(--bg)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);margin-top:44px}
+.ci{display:flex;align-items:center;gap:14px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card);margin-bottom:12px}
+.ci div{flex:1}
+.ci small{display:block;color:var(--mute);font-size:13px}
+.ci a,.ci span{color:var(--ink);text-decoration:none;font-weight:500;overflow-wrap:anywhere}
+.ci a:hover{color:var(--cy)}
+.copy{min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer;font:500 13px Inter,sans-serif;flex:none}
+.copy.ok{color:#3ddc97;border-color:#3ddc97}
+.cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.cities span{padding:8px 14px;border-radius:10px;border:1px solid var(--line);font-size:14px}
+.cities small{color:var(--mute);margin-left:6px}
+form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
+label{font-size:14px;color:var(--mute);display:grid;gap:6px}
+input,select,textarea{font:16px Inter,sans-serif;color:var(--ink);background:#0b1a27;border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-height:46px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cy);border-color:transparent}
+.fnote{font-size:13px;color:var(--mute);margin:0}
+.clock{font-family:Lora,serif;font-size:20px;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:30px max(5vw,18px);color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+.sig{font:italic 500 26px Lora,serif;color:var(--ink)}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+#glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(124,200,220,.07),transparent 65%);transform:translate(-50%,-50%);z-index:0;left:-500px;top:-500px}
+@media(max-width:980px){
+ .ledger{grid-template-columns:repeat(3,minmax(0,1fr))}.stat:nth-child(3){border-right:0}.stat:nth-child(n+4){border-top:1px solid var(--line)}
+ .mand,.two,.cgrid{grid-template-columns:minmax(0,1fr)}
+ .flip,.offers{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .engines{grid-template-columns:minmax(0,1fr)}
+ .strengths{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .jobin{grid-template-columns:minmax(0,1fr);gap:14px}
+ .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:210px}.ph.wide{grid-row:span 1;order:2}.ph.tall:last-child{grid-column:span 2;order:3}.ph.tall:last-child img{object-position:50% 30%}
+}
+@media(max-width:720px){
+ .hgrid{grid-template-columns:minmax(0,1fr)}
+ .htext{padding-bottom:10px}
+ .portrait{width:min(86%,400px)}
+ .badge{display:none}
+ .path{grid-template-columns:minmax(0,1fr);gap:26px}.step::after{display:none}
+ .pr{grid-template-columns:minmax(0,1fr);gap:6px}.pr small{text-align:left}
+ .brand span{display:none}
+}
+@media(max-width:600px){
+ .ledger{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{border-right:1px solid var(--line)!important;border-top:1px solid var(--line)}.stat:nth-child(2n){border-right:0!important}.stat:nth-child(-n+2){border-top:0}.stat:last-child{grid-column:span 2;border-right:0!important}
+ .flip,.offers,.strengths{grid-template-columns:minmax(0,1fr)}
+ .gal{grid-auto-rows:170px}
+ .job{padding-left:34px}.jobin{padding:20px}
+ .lbb.l,.lbb.r{top:auto;bottom:70px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div><div id="glow"></div>
+
+<nav aria-label="Sections"><div class="wrap">
+ <a class="brand" href="#top"><img src="pranav-avatar.jpg" alt=""><span>Pranav Pyati</span></a>
+ <div class="links">
+  <a href="#profile">Profile</a><a href="#mandate">Mandate</a><a href="#record">Track record</a><a href="#trainer">Trainer</a><a href="#expertise">Expertise</a><a href="#sessions">In session</a><a href="#certs">Certifications</a><a href="#connect">Connect</a>
+ </div>
+</div></nav>
+
+<header class="band hero" id="top">
+ <canvas id="net" aria-hidden="true"></canvas>
+ <div class="soi" aria-hidden="true">SOI</div>
+ <div class="wrap hgrid">
+  <div class="htext">
+   <div class="hello"><i class="dot"></i>INERA GROUP · Inera SOI — School of Intelligence</div>
+   <h1>Pranav<span>Dinesh Pyati</span></h1>
+   <div class="role">EXECUTIVE DIRECTOR · INERA SOI</div>
+   <div class="typed" aria-live="polite"><b id="typed">Corporate Trainer</b></div>
+   <p class="lede" style="font-family:Lora,serif;font-style:italic;font-size:20px;color:#cfdbe4">Turning learners into professionals — and markets into growth.</p>
+   <div class="cta">
+    <a class="btn pri" href="#connect">Work with Pranav →</a>
+    <a class="btn" href="https://www.linkedin.com/in/pranav-pyati-29a292391" target="_blank" rel="noopener">LinkedIn ↗</a>
+   </div>
+  </div>
+  <div class="portrait" id="portrait">
+   <img src="pranav-portrait.webp" alt="Portrait of Pranav Dinesh Pyati" width="667" height="1170" fetchpriority="high">
+   <div class="badge b1"><b>11 yrs</b>in industry</div>
+   <div class="badge b2"><b>120%</b>of sales target</div>
+  </div>
+ </div>
+</header>
+
+<section class="band alt" style="padding-block:0">
+ <div class="wrap ledger">
+  <div class="stat"><div class="num"><span data-c="11">0</span><small> yrs</small></div><p>In industry</p></div>
+  <div class="stat"><div class="num"><span data-c="120">0</span><small>%</small></div><p>Of sales target, 6 months running</p></div>
+  <div class="stat"><div class="num"><span data-c="9000">0</span><small>+</small></div><p>Vehicles onboarded</p></div>
+  <div class="stat"><div class="num"><span data-c="4">0</span></div><p>Cities led as Branch Head</p></div>
+  <div class="stat"><div class="num"><span data-c="10">0</span></div><p>Global certifications</p></div>
+ </div>
+</section>
+
+<section class="band" id="profile"><div class="wrap">
+ <div class="kicker rv">The profile</div>
+ <h2 class="rv" style="max-width:24ch">A sales leader who learned to grow markets on the ground — and now teaches the <em class="it">data and AI skills</em> the next generation will grow them with.</h2>
+ <div class="two">
+  <div class="rv">
+   <p>Pranav Dinesh Pyati is the Executive Director of Inera SOI — the School of Intelligence — the AI education and skilling vertical of INERA GROUP (Inera Software Pvt. Ltd.). He leads SOI's planning, college partnerships and growth with his own team.</p>
+   <p>He brings 11 years of industry experience as a corporate trainer, business development and sales professional, working across mobility, fintech, EV and customer-centric industries — building teams, opening markets and delivering measurable results.</p>
+  </div>
+  <div class="rv">
+   <p>Alongside his corporate career, he trains and mentors students and aspiring professionals in Data Analytics, Business Analytics, Data Science and AI/ML — pairing classroom concepts with the business problems he has solved in the field. A placement expert, he guides learners into their first roles, and as a professional social media and LinkedIn expert he helps them build the personal brand that gets them noticed.</p>
+   <p>His record includes exceeding 120% of sales targets for six consecutive months at Paytm, and leading large-scale operations as Branch Head at Udday Softech, onboarding more than 6,000 cabs and 3,000 auto-rickshaws across multiple cities.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="band alt" id="mandate"><div class="wrap">
+ <div class="kicker rv">The mandate</div>
+ <h2 class="rv">Leading the School of Intelligence.</h2>
+ <p class="lede rv">As Executive Director, Pranav owns the growth engine of Inera SOI — the vertical that has already trained more than 3,800 students and professionals in applied AI.</p>
+ <div class="mand">
+  <div class="edcard rv">
+   <small style="color:var(--cy);font-weight:600;font-size:13px">EXECUTIVE DIRECTOR</small>
+   <h3>Inera SOI — School of Intelligence</h3>
+   <ul>
+    <li><b>Strategy &amp; planning</b> — sets SOI's programme and growth roadmap.</li>
+    <li><b>College partnerships</b> — builds and manages institutional tie-ups.</li>
+    <li><b>Growth &amp; acquisition</b> — opens new campuses, cohorts and markets.</li>
+    <li><b>Team leadership</b> — runs SOI with his own delivery and growth team.</li>
+    <li><b>Lead trainer</b> — delivers SOI's Data Analytics with AI workshop cum internship.</li>
+   </ul>
+  </div>
+  <div class="rv">
+   <div class="tabs" role="tablist" id="hats"></div>
+   <div class="panel" id="hatPanel" role="tabpanel"></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="band" id="record"><div class="wrap">
+ <div class="kicker rv">Track record</div>
+ <h2 class="rv">Results that were counted, not claimed.</h2>
+ <div class="tl" id="tl"><div class="fill" id="tlfill"></div>
+  <div class="job rv"><div class="jobin">
+   <div><h3>Paytm</h3><div class="tag">Branch Head · Sales leadership · FinTech</div></div>
+   <div><p>Drove merchant acquisition and accelerated the adoption of digital payment solutions, leading operations across four major Maharashtra markets.</p>
+    <div class="meter"><div class="lab"><span>Of target · 6 consecutive months</span><b>120%</b></div><div class="bar"><i class="over" data-w="100"></i></div></div>
+    <div class="chips"><span class="chip">Pune</span><span class="chip">Nagpur</span><span class="chip">Nashik</span><span class="chip">Mumbai</span></div></div>
+  </div></div>
+  <div class="job rv"><div class="jobin">
+   <div><h3>Udday Softech</h3><div class="tag">Promoted to Branch Head · Mobility</div></div>
+   <div><p>Earned promotion to Branch Head and led large-scale driver and fleet onboarding operations, contributing to the company's expansion across multiple cities.</p>
+    <div class="meter"><div class="lab"><span>Cabs onboarded</span><b>6,000+</b></div><div class="bar"><i data-w="67"></i></div></div>
+    <div class="meter"><div class="lab"><span>Auto-rickshaws onboarded</span><b>3,000+</b></div><div class="bar"><i data-w="33"></i></div></div></div>
+  </div></div>
+  <div class="job rv"><div class="jobin">
+   <div><h3>EV Mobility</h3><div class="tag">Sales growth &amp; market development · Electric vehicles</div></div>
+   <div><p>Contributing to India's fast-moving EV mobility ecosystem — driving sales growth, customer engagement and market development.</p></div>
+  </div></div>
+  <div class="job rv" style="padding-bottom:0"><div class="jobin">
+   <div><h3>Senior Roles</h3><div class="tag">Senior Manager · Sr Sales Strategy · across companies</div></div>
+   <div><p>Senior Manager roles across companies covering sales strategy, project management, stakeholder management and team leadership — the operating range behind his current role as Trainer &amp; Business Development Manager and Executive Director.</p></div>
+  </div></div>
+ </div>
+ <div class="sectors rv" style="margin-top:40px"><span>Mobility</span><span>FinTech</span><span>EV</span><span>Customer-centric</span></div>
+</div></section>
+
+<section class="band alt" id="trainer"><div class="wrap">
+ <div class="kicker rv">The trainer</div>
+ <h2 class="rv">From the field to the classroom.</h2>
+ <p class="lede rv">Most trainers teach analytics from a textbook. Pranav teaches it from a sales floor — where every dashboard had a target behind it and every model had to pay for itself.</p>
+ <div class="flip" id="flip"></div>
+ <div class="hint rv">Hover or tap a card to turn it.</div>
+ <blockquote class="quote rv">“Don't train people to pass a course. Train them to walk into a business and be useful on day one.”<small>The SOI training principle</small></blockquote>
+ <div class="path" id="path">
+  <div class="step"><div class="n">1</div><h3>Learn</h3><p>Concepts anchored in live business cases.</p></div>
+  <div class="step"><div class="n">2</div><h3>Practise</h3><p>Hands-on work with real data and tools.</p></div>
+  <div class="step"><div class="n">3</div><h3>Apply</h3><p>Solve a business problem end to end.</p></div>
+  <div class="step"><div class="n">4</div><h3>Transition</h3><p>Confidently into a job-ready career.</p></div>
+ </div>
+ <div class="prog">
+  <div class="pr rv"><b>3-day</b><div><h3>Data Analytics with AI — Workshop cum Internship</h3><p>SOI's flagship campus programme, delivered by Pranav.</p></div><small>Colleges</small></div>
+  <div class="pr rv"><b>Placement</b><div><h3>Placement &amp; Career Mentoring</h3><p>Interview readiness and placement support for students moving into data and AI roles.</p></div><small>Students · Professionals</small></div>
+  <div class="pr rv"><b>LinkedIn</b><div><h3>LinkedIn &amp; Professional Branding</h3><p>Profiles, content and social media presence that make learners and professionals visible to employers.</p></div><small>Students · Professionals</small></div>
+ </div>
+</div></section>
+
+<section class="band" id="expertise"><div class="wrap">
+ <div class="kicker rv">Core expertise</div>
+ <h2 class="rv">Three engines. One operator.</h2>
+ <p class="lede rv">Thirteen areas of expertise, organised the way a business actually uses them: developing people, generating growth, and running the machine.</p>
+ <div class="cfil rv" role="group" aria-label="Highlight an engine" id="engf">
+  <button class="tab" aria-pressed="true" aria-selected="true" data-e="all">All 13</button><button class="tab" data-e="0">People</button><button class="tab" data-e="1">Growth</button><button class="tab" data-e="2">Operations</button>
+ </div>
+ <div class="engines" id="engines"></div>
+ <div class="strengths" id="strengths"></div>
+</div>
+<div class="marq" aria-hidden="true"><div id="marq"></div></div>
+</section>
+
+<section class="band alt" id="sessions"><div class="wrap">
+ <div class="kicker rv">In session</div>
+ <h2 class="rv">Where the work happens — in the room.</h2>
+ <p class="lede rv">Hands-on analytics labs and business communication sessions, taught the SOI way: live data on the screen, real business questions on the board.</p>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section class="band" id="certs"><div class="wrap">
+ <div class="kicker rv">Certifications</div>
+ <h2 class="rv">Credentialed by the platforms that set the standard.</h2>
+ <div class="ledger rv" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px">
+  <div class="stat"><div class="num"><span data-c="10">0</span></div><p>Certifications</p></div>
+  <div class="stat"><div class="num"><span data-c="7">0</span></div><p>Issuing organisations</p></div>
+  <div class="stat" style="grid-column:auto;border-right:0"><div class="num" style="font-size:clamp(26px,3.4vw,44px)">AI + Growth</div><p>Two disciplines, one profile</p></div>
+ </div>
+ <div class="cfil" id="cfil"></div>
+ <div class="certs" id="certlist"></div>
+ <div class="offers">
+  <div class="off rv"><h3>Campus Programmes</h3><p>Data Analytics with AI workshops, internships and certification sessions for colleges.</p></div>
+  <div class="off rv"><h3>Corporate Training</h3><p>Analytics and AI upskilling for sales, operations and business teams.</p></div>
+  <div class="off rv"><h3>Placement</h3><p>Placement readiness and career transition support for learners.</p></div>
+  <div class="off rv"><h3>LinkedIn Branding</h3><p>Professional LinkedIn and social media presence for people and teams.</p></div>
+ </div>
+</div></section>
+
+<section class="band connect" id="connect"><div class="wrap">
+ <div class="kicker rv">Connect</div>
+ <h2 class="rv">Let's build India's next <em class="it">AI-ready</em> workforce.</h2>
+ <p class="lede rv">For college partnerships, corporate training, campus programmes or speaking engagements, reach Pranav directly or through Inera SOI, a vertical of INERA GROUP (Inera Software Pvt. Ltd.).</p>
+ <div class="cgrid">
+  <div class="rv">
+   <div class="ci"><div><small>Phone</small><a href="tel:+918857817192">+91 88578 17192</a></div><button class="copy" data-copy="+91 88578 17192">Copy</button></div>
+   <div class="ci"><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/pranav-pyati-29a292391" target="_blank" rel="noopener">linkedin.com/in/pranav-pyati-29a292391</a></div><button class="copy" data-copy="https://www.linkedin.com/in/pranav-pyati-29a292391">Copy</button></div>
+   <div class="ci"><div><small>Group</small><a href="https://ineragroup.in" target="_blank" rel="noopener">ineragroup.in</a></div><button class="copy" data-copy="https://ineragroup.in">Copy</button></div>
+   <div class="ci"><div><small>Local time · India (IST)</small><span class="clock" id="clock">--:--</span></div><span id="avail" style="font-size:13px;color:var(--mute)"></span></div>
+   <div class="cities"><span>Sindhanur<small>Raichur</small></span><span>Belagavi<small>Karnataka</small></span><span>Bengaluru<small>Karnataka</small></span><span>Pune<small>Maharashtra</small></span></div>
+  </div>
+  <form class="rv" id="enq" novalidate>
+   <h3 style="font-size:26px">Send an enquiry</h3>
+   <label>Your name<input id="fn" name="name" required autocomplete="name"></label>
+   <label>Organisation / college<input id="fo" name="org" autocomplete="organization"></label>
+   <label>Interested in<select id="ft" name="topic"><option>College partnership</option><option>Corporate training</option><option>Campus programme — Data Analytics with AI</option><option>Placement &amp; career mentoring</option><option>LinkedIn &amp; professional branding</option><option>Speaking engagement</option></select></label>
+   <label>Message<textarea id="fm" name="msg"></textarea></label>
+   <button class="btn pri" type="submit" style="justify-content:center">Send on WhatsApp →</button>
+   <p class="fnote" id="fmsg">Opens WhatsApp with your message ready to send to Pranav.</p>
+  </form>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div><div class="sig">Pranav Pyati</div>Executive Director · Inera SOI</div>
+ <div>Inera SOI, a vertical of INERA GROUP (Inera Software Pvt. Ltd.) · <a href="https://ineragroup.in" target="_blank" rel="noopener">ineragroup.in</a></div>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+ <button class="lbb x" id="lbx" aria-label="Close">×</button>
+ <button class="lbb l" id="lbl" aria-label="Previous photo">‹</button>
+ <img id="lbi" alt="">
+ <button class="lbb r" id="lbr" aria-label="Next photo">›</button>
+ <p id="lbc"></p>
+</div>
+
+<script>
+{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* data */
+const hats=[
+ ['The Trainer','Teaches Data Analytics, Business Analytics, Data Science and AI/ML with real business cases — so learners leave job-ready, not just certified.'],
+ ['The Business Builder','Business development, market expansion and strategic partnerships — finding the next opportunity and turning it into a scalable model.'],
+ ['The Sales Leader','A decade of target-beating sales leadership and multi-city operations — the discipline that keeps growth measurable.'],
+ ['The Placement Expert','Guides students and aspiring professionals from campus to career — interview readiness, positioning and placement.'],
+ ['The LinkedIn & Social Media Expert','Builds professional brands on LinkedIn and social media — for learners, professionals and the organisations they represent.']];
+const romans=['i.','ii.','iii.','iv.','v.'];
+const disc=[['DA','Data Analytics','Cleaning, analysing and visualising data to answer real questions.'],['BA','Business Analytics','Turning numbers into decisions on sales, customers and operations.'],['DS','Data Science','Statistical thinking and modelling with practical, hands-on projects.'],['AI/ML','AI & Machine Learning','Applied AI and ML for business problems — with today\'s AI tools.']];
+const engines=[['People','Develop & lead',['Corporate Training — DA, BA, DS, AI/ML','Team Leadership & Performance Management','Stakeholder Management & Relationship Building','Placement & Career Transitions']],
+ ['Growth','Win & expand',['Business Development & Strategic Partnerships','Sales Strategy & Revenue Growth','Market Expansion & Go-to-Market Execution','Client Acquisition & Account Management','Customer Relationship Management (CRM)','LinkedIn & Professional Social Media']],
+ ['Operations','Run & optimise',['Business Operations & Process Optimisation','Data-Driven Decision Making','Project Management']]];
+const strengths=[['Target delivery','120% of target for six consecutive months','Proven'],['Scale operations','9,000+ vehicles onboarded across cities','Proven'],['Multi-city leadership','Branch Head across four markets','Proven'],['Leadership qualities','Teams, stakeholders and performance','Core'],['Placement & LinkedIn','Career placement and professional branding','Expert']];
+const certs=[['Microsoft','Generative AI Foundations','Artificial Intelligence'],['Google','Gemini Certified','Artificial Intelligence'],['Google','30+ AI Tools','Artificial Intelligence'],['LearnTube AI','Product Management','Product & Strategy'],['LinkedIn','LinkedIn Certified','Professional Skills'],['Google','Google Analytics','Data & Analytics'],['Google','Google Ads Video','Digital Marketing'],['Semrush','SEO & Digital Marketing','Digital Marketing'],['Meta','Facebook & Instagram Advertising','Digital Marketing'],['HubSpot','Email Marketing','Digital Marketing']];
+const photos=[['session-1.jpg','Data Analytics with AI — walking learners through a live sales dataset','tall'],['session-3.jpg','Corporate communication session — from B2B and B2C models to brand identity, analytics and SEO','wide'],['session-2.jpg','Turning rows of data into business questions','tall'],['session-4.jpg','Hands-on Excel lab — every learner works on the same dataset at their own screen','tall']];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* hats tabs */
+const hatT=$('#hats'),hatP=$('#hatPanel');
+hatT.innerHTML=hats.map((h,i)=>`<button class="tab" role="tab" id="hat${i}" aria-selected="${i===0}">${esc(h[0].replace('The ','').replace(' & Social Media',''))}</button>`).join('');
+let hatI=0,hatTimer;
+function showHat(i,user){hatI=i;$$('#hats .tab').forEach((b,j)=>b.setAttribute('aria-selected',j===i));hatP.classList.remove('swap');void hatP.offsetWidth;hatP.classList.add('swap');
+ hatP.innerHTML=`<div class="roman">${romans[i]}</div><h3>${esc(hats[i][0])}</h3><p>${esc(hats[i][1])}</p>`;if(user)clearInterval(hatTimer)}
+$$('#hats .tab').forEach((b,i)=>b.addEventListener('click',()=>showHat(i,true)));
+showHat(0);if(!RM)hatTimer=setInterval(()=>showHat((hatI+1)%hats.length),5200);
+
+/* flip cards */
+$('#flip').innerHTML=disc.map(d=>`<button class="fc rv" aria-label="${esc(d[1])}"><div class="fcin"><div class="face front"><b>${esc(d[0])}</b><span>${esc(d[1])}</span></div><div class="face back"><span style="font-weight:600">${esc(d[1])}</span><p>${esc(d[2])}</p></div></div></button>`).join('');
+$$('.fc').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('on')));
+
+/* engines */
+$('#engines').innerHTML=engines.map((e,i)=>`<div class="eng rv" data-i="${i}"><h3>${e[0]}</h3><div class="sub">${e[1]} · ${e[2].length}</div><ul>${e[2].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+$('#strengths').innerHTML=strengths.map(s=>`<div class="sg rv"><b>${esc(s[0])}</b><p>${esc(s[1])}</p><span>${s[2]}</span></div>`).join('');
+$$('#engf .tab').forEach(b=>b.addEventListener('click',()=>{const e=b.dataset.e;$$('#engf .tab').forEach(x=>{x.setAttribute('aria-selected',x===b);x.setAttribute('aria-pressed',x===b)});
+ $$('.eng').forEach(c=>{c.classList.toggle('dim',e!=='all'&&c.dataset.i!==e);c.classList.toggle('hi',c.dataset.i===e)})}));
+const allSkills=engines.flatMap(e=>e[2]);$('#marq').innerHTML=[...allSkills,...allSkills].map(s=>`<span>${esc(s)}</span>`).join('');
+
+/* certs */
+const cats=['All',...new Set(certs.map(c=>c[2]))];
+$('#cfil').innerHTML=cats.map((c,i)=>`<button class="tab" aria-selected="${i===0}" data-c="${esc(c)}">${esc(c)}${i?'':' · 10'}</button>`).join('');
+$('#certlist').innerHTML=certs.map(c=>`<div class="cert" data-c="${esc(c[2])}"><small>${esc(c[0].toUpperCase())}</small><h3>${esc(c[1])}</h3><p>${esc(c[2])}</p></div>`).join('');
+$$('#cfil .tab').forEach(b=>b.addEventListener('click',()=>{$$('#cfil .tab').forEach(x=>x.setAttribute('aria-selected',x===b));const c=b.dataset.c;$$('.cert').forEach(x=>x.classList.toggle('hide',c!=='All'&&x.dataset.c!==c))}));
+
+/* gallery + lightbox */
+$('#gal').innerHTML=photos.map((p,i)=>`<button class="ph rv ${p[2]}" data-i="${i}" aria-label="Open photo: ${esc(p[1])}"><img src="${p[0]}" alt="${esc(p[1])}" loading="lazy"><figcaption>${esc(p[1])}</figcaption></button>`).join('');
+const lb=$('#lb');let li=0,lastFocus;
+function openLb(i){li=(i+photos.length)%photos.length;$('#lbi').src=photos[li][0];$('#lbi').alt=photos[li][1];$('#lbc').textContent=`${li+1} / ${photos.length} — ${photos[li][1]}`;if(!lb.classList.contains('open')){lastFocus=document.activeElement;lb.classList.add('open');$('#lbx').focus()}}
+function closeLb(){lb.classList.remove('open');lastFocus&&lastFocus.focus()}
+$$('.ph').forEach(p=>p.addEventListener('click',()=>openLb(+p.dataset.i)));
+$('#lbx').addEventListener('click',closeLb);$('#lbl').addEventListener('click',()=>openLb(li-1));$('#lbr').addEventListener('click',()=>openLb(li+1));
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')openLb(li-1);if(e.key==='ArrowRight')openLb(li+1)});
+let tx=0;lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)openLb(li+(d<0?1:-1))});
+
+/* typed roles */
+const roles=['Corporate Trainer','Placement Expert','LinkedIn & Social Media Expert','Business Builder','Sales Leader'];
+const tEl=$('#typed');
+if(!RM){let r=0,c=roles[0].length,del=true;const tick=()=>{const w=roles[r];if(del){c--;if(c<=0){del=false;r=(r+1)%roles.length}}else{c++;if(c>=roles[r].length){del=true;tEl.textContent=roles[r];return setTimeout(tick,1900)}}
+ tEl.textContent=roles[r].slice(0,Math.max(c,0))||'​';setTimeout(tick,del?40:75)};setTimeout(tick,2200)}
+
+/* counters */
+function count(el){const t=+el.dataset.c,d=RM?0:1600,s=performance.now();const f=n=>{const p=d?Math.min((n-s)/d,1):1,v=Math.round(t*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('en-IN');if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+
+/* reveal observer */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');
+ t.querySelectorAll('[data-c]').forEach(count);if(t.matches('[data-c]'))count(t);
+ t.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w+'%');io.unobserve(t)}),{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+$$('.ledger').forEach(l=>io.observe(l));
+
+/* learning path lights up */
+const pio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){$$('#path .step').forEach((s,i)=>setTimeout(()=>s.classList.add('lit'),RM?0:i*450));pio.disconnect()}}),{threshold:.5});
+pio.observe($('#path'));
+
+/* scroll: progress, timeline fill, active nav */
+const secs=$$('section[id],header[id]'),navL=$$('.links a'),tl=$('#tl'),fill=$('#tlfill');
+function onScroll(){const h=document.documentElement,y=h.scrollTop;$('#prog').style.width=(y/(h.scrollHeight-h.clientHeight)*100)+'%';
+ const r=tl.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.6-r.top)/r.height,0),1);fill.style.height=(p*(r.height-12))+'px';
+ let cur='';secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.35)cur=s.id});
+ navL.forEach(a=>{const on=a.getAttribute('href')==='#'+cur;if(on&&!a.classList.contains('on')){const L=a.parentElement;L.scrollTo({left:a.offsetLeft-L.clientWidth/2+a.clientWidth/2,behavior:RM?'auto':'smooth'})}a.classList.toggle('on',on)})}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* portrait tilt + cursor glow */
+const pt=$('#portrait'),glow=$('#glow');
+if(!RM&&matchMedia('(pointer:fine)').matches){addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';
+ const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;if(scrollY<innerHeight)pt.style.transform=`rotateY(${x*8}deg) rotateX(${-y*5}deg) translate(${x*-14}px,0)`},{passive:true})}
+
+/* neural network canvas */
+const cv=$('#net'),cx=cv.getContext('2d');let W,H,pts=[];
+function size(){const r=cv.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+ const n=Math.round(Math.min(90,W*H/14000));pts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+const netRO=new ResizeObserver(size);netRO.observe(cv);size();
+let heroOn=true;new IntersectionObserver(e=>heroOn=e[0].isIntersecting).observe(cv);
+function draw(){if(heroOn){cx.clearRect(0,0,W,H);for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+ for(let i=0;i<pts.length;i++){const a=pts[i];for(let j=i+1;j<pts.length;j++){const b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){cx.strokeStyle=`rgba(124,200,220,${(1-d/130)*.35})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+ cx.fillStyle='rgba(124,200,220,.8)';cx.beginPath();cx.arc(a.x,a.y,1.6,0,Math.PI*2);cx.fill()}}
+ if(!RM)requestAnimationFrame(draw)}
+draw();
+
+/* live IST clock */
+function clock(){const now=new Date(),f=new Intl.DateTimeFormat('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true});$('#clock').textContent=f.format(now);
+ const h=+new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',hour:'2-digit',hour12:false}).format(now);$('#avail').textContent=h>=9&&h<19?'● Working hours':'Replies next working day'}
+clock();setInterval(clock,1000);
+
+/* copy buttons */
+$$('.copy').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';b.classList.add('ok')}catch(e){b.textContent='Select & copy'}setTimeout(()=>{b.textContent='Copy';b.classList.remove('ok')},1800)}));
+
+/* enquiry -> WhatsApp */
+$('#enq').addEventListener('submit',e=>{e.preventDefault();const n=$('#fn').value.trim(),m=$('#fmsg');
+ if(!n){m.textContent='Please add your name.';m.style.color='var(--red)';$('#fn').focus();return}
+ const o=$('#fo').value.trim(),txt=`Hello Pranav, I'm ${n}${o?' from '+o:''}. I'm interested in: ${$('#ft').value}.${$('#fm').value.trim()?'\n\n'+$('#fm').value.trim():''}`;
+ const url='https://wa.me/918857817192?text='+encodeURIComponent(txt);const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+ m.style.color='var(--mute)';m.innerHTML='WhatsApp should open now. If it didn\'t, <a href="'+url+'" target="_blank" rel="noopener">tap here</a>.'});
+}
+</script>
+</body>
+</html>
